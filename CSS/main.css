@@ -1,0 +1,28 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+		"Hiragino Sans", Meiryo, sans-serif;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+body {
+	background-color: chocolate;
+	height: 100vh;
+}
+
+div {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+img {
+	margin: auto 0;
+	width: 100%;
+}
