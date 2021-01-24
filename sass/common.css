@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=common.css.map */

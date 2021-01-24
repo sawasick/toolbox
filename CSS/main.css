@@ -12,17 +12,57 @@ body {
 	height: auto;
 }
 
-body {
-	background-color: chocolate;
-	height: 100vh;
+.main-content {
+	width: 100vw;
+	min-height: 100vh;
 }
-
-div {
-	width: 80%;
-	height: 80%;
-	margin: auto;
-}
-img {
-	margin: auto 0;
+.main-content__bg {
 	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.box {
+	height: 80vh;
+	width: calc(80vh * 14 / 9);
+	position: relative;
+	top: 10vh;
+	margin: 0 auto;
+}
+.box__bg {
+	width: 100%;
+	height: 100%;
+}
+.box__content {
+	width: 75%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 12.5%;
+}
+.content-list {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.content-list__tmb {
+	width: 24%;
+	height: 30%;
+}
+.content-list__tmb a {
+	text-decoration: none;
+}
+.content-list__tmb img {
+	display: block;
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
 }
