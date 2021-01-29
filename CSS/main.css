@@ -5,22 +5,24 @@
 
 html,
 body {
-	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-		"Hiragino Sans", Meiryo, sans-serif;
+	font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+		'Hiragino Sans', Meiryo, sans-serif;
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
 }
-
+/* main-content */
 .main-content {
 	width: 100vw;
 	min-height: 100vh;
+	display: flex;
 }
 .main-content__bg {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
+/* box */
 .box {
 	height: 80vh;
 	width: calc(80vh * 14 / 9);
@@ -39,6 +41,7 @@ body {
 	top: 10%;
 	left: 12.5%;
 }
+/* content-list */
 .content-list {
 	width: 100%;
 	height: 100%;
@@ -57,12 +60,129 @@ body {
 	width: 24%;
 	height: 30%;
 }
-.content-list__tmb a {
+.content-list__a {
 	text-decoration: none;
 }
-.content-list__tmb img {
+.content-list__img {
 	display: block;
 	width: auto;
 	height: 100%;
 	margin: 0 auto;
+}
+/* info */
+.info {
+	width: 0;
+	height: 100vh;
+	background-color: rgba(250, 250, 250, 0.75);
+	position: relative;
+	top: 0;
+	right: 0;
+	/* display: none; */
+}
+/* btns */
+.btns {
+	margin: 0 0 0 0;
+	position: absolute;
+	height: 100%;
+	left: calc((100vw - (80vh * 14 / 9)) / 2 + (80vh * 14 / 9) + 2%);
+}
+.btns__wrapper {
+	height: 80%;
+	top: 10%;
+}
+.btns__btn {
+	position: relative;
+	width: 6vw;
+	height: 6vw;
+	/* top: 10%; */
+}
+.btns__btn img {
+	width: 100%;
+	height: 100%;
+}
+.btn--open,
+.btn--close {
+	top: 10%;
+}
+
+.btn--sort--selected {
+	display: none;
+}
+.btn--disp {
+	/* btns__btnのheight×3個分 */
+	top: calc(90% - 18vw - 3%);
+}
+.btn--sort {
+	/* btns__btnのheight×3個分 */
+	top: calc(90% - 18vw);
+}
+
+/* アニメーション */
+.info--in {
+	animation: info--in 0.8s;
+	animation-fill-mode: forwards;
+}
+.info--out {
+	animation: info--out 0.8s;
+	animation-fill-mode: forwards;
+}
+.fade--in {
+	animation: fade--in 0.8s;
+	animation-fill-mode: forwards;
+}
+.fade--out {
+	animation: fade--out 0.8s;
+	animation-fill-mode: forwards;
+}
+@keyframes info--in {
+	100% {
+		width: 30%;
+	}
+}
+@keyframes info--out {
+	100% {
+		width: 0%;
+	}
+}
+@keyframes fade--in {
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade--out {
+	100% {
+		opacity: 0;
+	}
+}
+
+/* よく使うスタイル */
+.disp--none {
+	display: none;
+}
+
+/* リストの時はダミー画像隠す */
+.content-list--list {
+	overflow: scroll;
+}
+.content-list__tmb--list {
+	width: 50%;
+	margin-bottom: 3.3%;
+}
+.content-list__a--list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.content-list__img--list {
+	margin: 0 5% 0 0;
+}
+.content-list__p--list {
+	display: inline-block;
+	font-size: 2rem;
+	margin: auto 0;
+	color: #e6e6e6;
+}
+.content-list__dummy--list {
+	display: none;
 }
