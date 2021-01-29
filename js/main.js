@@ -90,9 +90,11 @@ document.addEventListener(
 
 				btn_disp_grid.classList.add('fade--in');
 				btn_disp_grid.classList.remove('fade--out');
+				btn_disp_grid.classList.toggle('disp--none');
 
 				btn_disp_list.classList.add('fade--in');
 				btn_disp_list.classList.remove('fade--out');
+				btn_disp_list.classList.toggle('disp--none');
 
 				btn_sort.classList.add('fade--in');
 				btn_sort.classList.remove('fade--out');
@@ -102,9 +104,7 @@ document.addEventListener(
 					info.classList.remove('info--out');
 
 					btn_disp_grid.style.opacity = '1';
-					btn_disp_grid.classList.toggle('disp--none');
 					btn_disp_list.style.opacity = '1';
-					btn_disp_list.classList.toggle('disp--none');
 					btn_sort.style.opacity = '1';
 				}, 1000);
 			},
