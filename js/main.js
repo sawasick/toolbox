@@ -185,7 +185,6 @@ function listDrag() {
 					li.setAttribute('draggable', 'false');
 					//クリックをキャンセルするイベントリスナーを破棄
 					li.removeEventListener('click', prevDef, false);
-					console.log('remove');
 				}
 			}
 		}

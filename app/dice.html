@@ -7,12 +7,65 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
 		/>
 		<title>サイコロ</title>
-		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="../css/normalize.css" />
 		<!-- <link rel="stylesheet" href="sass/main.css" /> -->
-		<link rel="stylesheet" href="css/main.css" type="text/css" />
+		<link rel="stylesheet" href="../css/main.css" type="text/css" />
+		<link rel="stylesheet" href="../css/app/dice.css" type="text/css" />
 	</head>
 	<body>
-		<main></main>
-		<script type="text/javascript" src="js/main.js" defer></script>
+		<main class="main-content">
+			<img src="../images/bg.png" alt="背景画像" class="main-content__bg" />
+			<div class="dice-wrapper">
+				<div class="dice-wrapper__img-wrapper">
+					<img
+						src="../images/dice/dice1.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice1"
+					/>
+				</div>
+				<div class="dice-wrapper__img-wrapper disp--none">
+					<img
+						src="../images/dice/dice2.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice2"
+					/>
+				</div>
+				<div class="dice-wrapper__img-wrapper disp--none">
+					<img
+						src="../images/dice/dice3.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice3"
+					/>
+				</div>
+				<div class="dice-wrapper__img-wrapper disp--none">
+					<img
+						src="../images/dice/dice4.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice4"
+					/>
+				</div>
+				<div class="dice-wrapper__img-wrapper disp--none">
+					<img
+						src="../images/dice/dice5.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice5"
+					/>
+				</div>
+				<div class="dice-wrapper__img-wrapper disp--none">
+					<img
+						src="../images/dice/dice6.png"
+						alt="サイコロ"
+						class="dice"
+						id="dice6"
+					/>
+				</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="../js/app/dice.js" defer></script>
 	</body>
 </html>

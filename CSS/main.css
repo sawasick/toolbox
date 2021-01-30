@@ -5,12 +5,13 @@
 
 html,
 body {
-	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-		"Hiragino Sans", Meiryo, sans-serif;
+	font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+		'Hiragino Sans', Meiryo, sans-serif;
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
 	font-size: 24px;
+	height: 100%;
 }
 /* main-content */
 .main-content {
