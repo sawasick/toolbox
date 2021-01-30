@@ -18,17 +18,19 @@
 				<img src="images/box.png" alt="お道具箱" class="box__bg" />
 				<div class="box__content">
 					<ul class="content-list">
-						<li class="content-list__tmb">
+						<li class="content-list__tmb content-list__drag" id="list1">
 							<a href="app/dice.html" target="blank" class="content-list__a">
 								<img
 									src="images/tmb/dice.png"
 									alt=""
 									class="content-list__img"
 								/>
-								<p class="content-list__p disp--none">サイコロ</p>
+								<p class="content-list__p disp--none" draggable="false">
+									サイコロ
+								</p>
 							</a>
 						</li>
-						<li class="content-list__tmb">
+						<li class="content-list__tmb content-list__drag" id="list2">
 							<a href="" target="blank" class="content-list__a">
 								<img
 									src="images/tmb/bingo.png"
@@ -38,7 +40,7 @@
 								<p class="content-list__p disp--none">ビンゴ</p>
 							</a>
 						</li>
-						<li class="content-list__tmb">
+						<li class="content-list__tmb content-list__drag" id="list3">
 							<a href="" target="blank" class="content-list__a">
 								<img
 									src="images/tmb/cointoss.png"
@@ -48,7 +50,7 @@
 								<p class="content-list__p disp--none">コイントス</p>
 							</a>
 						</li>
-						<li class="content-list__tmb">
+						<li class="content-list__tmb content-list__drag" id="list4">
 							<a href="" target="blank" class="content-list__a">
 								<img
 									src="images/tmb/unitconv.png"
@@ -58,7 +60,7 @@
 								<p class="content-list__p disp--none">単位変換</p>
 							</a>
 						</li>
-						<li class="content-list__tmb">
+						<li class="content-list__tmb content-list__drag" id="list5">
 							<a href="" target="blank" class="content-list__a">
 								<img
 									src="images/tmb/amida.png"
@@ -68,39 +70,42 @@
 								<p class="content-list__p disp--none">あみだくじ</p>
 							</a>
 						</li>
-						<li class="content-list__tmb content-list__dummy">
+						<li
+							class="content-list__tmb content-list__dummy content-list__drag"
+							draggable="false"
+						>
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 						<li class="content-list__tmb content-list__dummy">
 							<!-- <a href="" target="blank"> -->
-							<img src="images/tmb/dummy.png" alt="" />
+							<!-- <img src="images/tmb/dummy.png" alt="" /> -->
 							<!-- </a> -->
 						</li>
 					</ul>
@@ -108,12 +113,12 @@
 			</div>
 			<div class="info" id="info"></div>
 			<div class="btns">
-				<div class="btns__btn btn--open">
+				<!-- <div class="btns__btn btn--open">
 					<img src="images/info-open.png" alt="インフォメーションオープン" />
 				</div>
 				<div class="btns__btn btn--close disp--none">
 					<img src="images/info-close.png" alt="インフォメーションクローズ" />
-				</div>
+				</div> -->
 				<div class="btns__btn btn--disp btn--disp--grid disp--none">
 					<img src="images/disp-grid.png" alt="グリッド表示" />
 				</div>
@@ -123,7 +128,7 @@
 				<div class="btns__btn btn--sort">
 					<img src="images/sort.png" alt="並び替え" />
 				</div>
-				<div class="btns__btn btn--sort btn--sort--selected">
+				<div class="btns__btn btn--sort btn--sort--selected disp--none">
 					<img src="images/sort-selected.png" alt="並び替え中" />
 				</div>
 			</div>
