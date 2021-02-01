@@ -22,8 +22,6 @@ document.addEventListener(
 				let time = 0;
 				//intervalミリ秒ごとに転がる
 				const roll = window.setInterval(function () {
-					// console.log('かいし');
-
 					//6+1(0~6未満+1 → Math.floorで小数切り捨て)
 					//1~6の範囲
 					const result = Math.floor(Math.random() * 6 + 1);
